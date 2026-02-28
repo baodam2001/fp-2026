@@ -29,7 +29,7 @@ let timediff (hh1, mm1) (hh2, mm2) =
 let minutes (hh, mm) = timediff(0, 0) (hh, mm)
 
 (* Exercise 2.5 Solve HR, exercise 2.2 *)
-// this exercise is similar to Exercise 2.2 above, except the function takes a tuple as an argument, not two separate arguments
+// this exercise is similar to Exercise 2.2 above, except that the function takes a tuple as an argument, not two separate arguments
 // here "function" can be used 'cause there is only one argument, unlike Exercise 2.2
 let rec pow = function
 | (_, 0) -> ""
@@ -41,7 +41,6 @@ let rec bin (n, k) =
     | (n, 0) -> 1
     | (n, k) when k=n -> 1
     | (n, k) -> bin(n-1, k-1) + bin(n-1, k)
-
 (*
 evaluation:
 bin (4, 2) 
