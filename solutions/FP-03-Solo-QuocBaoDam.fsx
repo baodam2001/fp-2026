@@ -1,3 +1,6 @@
+// I am sorry for the late submission, which means extra work for you. 
+// I would appreciate any feedback, thank you.
+
 (* Exercise 3.1 Solve HR, exercise 2.10 *)
 let test(c,e) = if c then e else 0;;
 
