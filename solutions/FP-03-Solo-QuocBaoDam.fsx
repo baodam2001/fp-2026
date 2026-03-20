@@ -111,9 +111,8 @@ let (.+.) (a, b) (c, d) = (a + c, b + d)
 let (.*.) (a, b) (c, d) = (a*c - b*d, b*c + a*d)
 
 (* part 2 *)
-let (.-.) (a, b) (c, d) = 
-    let (~-.) (c, d) = (-c, -d)
-    (a, b) .+. -. (c, d)
+let (~-.) (c, d) = (-c, -d)
+let (.-.) (a, b) (c, d) = (a, b) .+. -. (c, d)
 
 
 // F# does not allow to define a prefix operator like this (~*.)
